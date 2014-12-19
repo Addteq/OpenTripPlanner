@@ -1,7 +1,9 @@
-NOTE: In order to build this project, the dependencies in `lib/` must be made
-available to Maven, e.g., by placing them in one's `~/.m2` directory or by
-following the instructions at
-<http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html>.
+NOTE: In order to build this project, the dependencies in `lib/` must first be
+made available to Maven by running the following commands:
+
+    cd lib
+    mvn install:install-file -Dfile=core-1.0.7.jar -DpomFile=core-1.0.7.pom
+    mvn install:install-file -Dfile=osmpbf-1.2.1.jar -DpomFile=osmpbf-1.2.1.pom
 
 ##### OVERVIEW
 
