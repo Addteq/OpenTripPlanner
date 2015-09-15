@@ -1,3 +1,10 @@
+NOTE: In order to build this project, the dependencies in `lib/` must first be
+made available to Maven by running the following commands:
+
+    cd lib
+    mvn install:install-file -Dfile=core-1.0.7.jar -DpomFile=core-1.0.7.pom
+    mvn install:install-file -Dfile=osmpbf-1.2.1.jar -DpomFile=osmpbf-1.2.1.pom
+
 ##### OVERVIEW
 
 OpenTripPlanner (OTP) is an open source multi-modal trip planner. It depends on open data in open standard file formats (GTFS and OpenStreetMap), and includes a REST API for journey planning as well as several map-based Javascript clients. OpenTripPlanner can also create travel time contour visualizations and compute accessibility indicators for planning and research applications. For more information, see the project website: http://opentripplanner.org
